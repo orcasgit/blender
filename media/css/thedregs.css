@@ -1,0 +1,13 @@
+/*
+	The Dregs ~ Blender CSS.
+	hacks and such
+*/
+
+/* =General
+----------------------------------------------------------------------------*/
+.mir { letter-spacing : -1000em; }
+/* Just for Opera, but hide from MacIE */
+/*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
+/* End of hack */
+
+p.mir {line-height:0;}

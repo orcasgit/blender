@@ -1,0 +1,36 @@
+/*
+	Forms ~ Blender CSS.
+	Forms style sheet
+*/
+
+/* =Typography
+----------------------------------------------------------------------------*/
+form {margin:0 0 20px;}
+.contentForm {padding:10px; background:#ccc;}
+.contentForm legend {position:relative;}
+.contentForm legend span {position:absolute; top:-26px; right:10px; left:-10px; background:#808080; height:26px; line-height:26px; font-weight:bold; padding-left:5px; color:#F2F2F2;}
+.contentForm fieldset {padding:26px 10px 10px; background:#e6e6e6; margin:0 0 10px 0; position:relative;}
+.contentForm dl {margin:0; padding:0;}
+
+.contentForm dl {padding:0; margin:0;}
+.contentForm dt {width:20%; float:left; text-align:right; height:24px; font-size:83%; line-height:24px; margin:10px 0 0;}
+.contentForm dd {width:79%; float:right; height:24px; margin:10px 0 0; position:relative;}
+.contentForm dd input[type="text"] {width:275px;}
+.contentForm dd.textareaObject {height:100px; margin:10px 0 0;}
+.contentForm textarea {height:90px; width:275px;}
+.contentForm fieldset input, form fieldset textarea {border:1px solid #808080; padding:4px; background:#F2F2F2;}
+.contentForm fieldset input:hover, form fieldset input:focus, form fieldset textarea:hover, form fieldset textarea:focus {background:#fff;}
+.contentForm .error {width:160px; position:absolute; top:0px; left:285px; background:red; color:#fff; padding:3px 10px;}
+
+form#loginForm {padding:10px; background:#efefef; margin:0 0 30px;}
+#loginForm fieldset {width:140px; margin:0; padding:20px 0 0;}
+#loginForm legend {font-size:116%; font-weight:bold; line-height:125%; position:relative;}
+#loginForm label {display:block; margin:0; font-size:83%;}
+#loginForm input[type="text"], #loginForm input[type="password"] {margin:0 0 10px; width:190px;}
+#loginForm legend span {position:absolute;}
+
+#extraSidebar p.forgot {font-size:83%; margin:5px 0 0;}
+
+#emailForm {
+	width:420px;
+}

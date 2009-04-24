@@ -1,0 +1,28 @@
+{% load tagging_tags comments %}
+
+<div class="metaBlock">
+    <dl class="meta">
+        <dt>Quantity:</dt>
+        <dd><a href="">5</a></dd>
+        <dt>Privacy:</dt>
+        <dd><a href="">Everyone</a></dd>
+        <dt>Added:</dt>
+        <dd><a href="">3/13/09</a></dd>
+        <dt>Sets:</dt>
+        <dd><a href="">Design</a></dd>
+        <dt>Comments:</dt>
+        {% get_comment_count for flatpage as comment_count %}
+        <dd><a href="">({{ comment_count }})</a></dd>
+    </dl>
+    <ul class="tags">
+        <li>Tags:</li>
+        {% tags_for_object flatpage as tags_list %}
+        {% for tag in tags_list %}
+            {% if not forloop.last %}
+                <li><a href="/tags/{{ tag }}">{{ tag|capfirst }}</a>,</li>
+            {% else %}
+                <li><a href="/tags/{{ tag }}">{{ tag|capfirst }}</a></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>

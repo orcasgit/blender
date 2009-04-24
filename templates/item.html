@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% load markup webdesign comments %}
+
+{% block contentViewType %}detailView{% endblock %}
+
+{% block pageContent %}
+        <div id="content" class="container_16">
+            <div id="contentWrap" class="clearfix">
+                <div id="pageContent" class="grid_8">
+                    {% block content %}
+                        {% block contentTools %}
+                            {% include "includes/content_tools.html" %}
+                        {% endblock %}
+                        
+                        <h1 class="pageTitle">{{ flatpage.title }}</h1>
+                    
+                        {% block meta %}
+                            {% include "includes/item_meta.html" %}
+                        {% endblock %}
+                        
+                        <div class="largeImage">
+                            <img src="http://farm4.static.flickr.com/3370/3408483440_d927c3164c_b.jpg" alt="Name" />
+                        </div>
+                        
+                        <h4>Other Images</h4>
+                        <ul class="altImages clearfix">
+                            <li><a href="#"><img src="http://farm4.static.flickr.com/3556/3407672181_dfdd97b4e2_b.jpg" alt="Name" /></a></li>
+                            <li><a href="#"><img src="http://farm4.static.flickr.com/3617/3407674377_0ebe34c1bf_b.jpg" alt="Name" /></a></li>
+                            <li><a href="#"><img src="http://farm4.static.flickr.com/3572/3407675087_e6c9786f5e_b.jpg" alt="Name" /></a></li>
+                        </ul>
+                        
+                        <h4>Description</h4>
+                        {{ flatpage.content|textile }}
+                        
+                        <h4>Meta</h4>
+                        <dl>
+                            <dt>Weight</dt>
+                            <dd>24lbs.</dd>
+                            <dt>Height</dt>
+                            <dd>4 Feet</dd>
+                            <dt>Color</dt>
+                            <dd>Blue</dd>
+                        </dl>
+                        
+                        {% get_comment_list for flatpage as comment_list %}
+                        {% include "includes/comment_list.html" %}
+                        
+                        {% render_comment_form for flatpage %}
+                        
+                    {% endblock %}
+                </div>
+            {% block sidebar %}
+                {% include "includes/item_sidebar.html" %}
+            {% endblock %}
+        </div>
+        {% block nav %}
+            {% include "includes/nav.html" %}
+        {% endblock %}
+        {% block breadcrumb %}
+            {% include "includes/breadcrumb.html" %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block secondaryContent %}
+    {% include "includes/secondary_content.html" %}
+{% endblock %}
+
+{% block extraJS %}
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+          $('#comment_form').validate('{% url comment_form_validate %}', {fields: ['name', 'email', 'comment'], callback: validate_comment, event:'click', dom: $('a[id=postComment]') }});
+        });
+    </script>
+{% endblock %}

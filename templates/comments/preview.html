@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% load markup webdesign comments i18n %}
+
+{% block pageContent %}
+        <div id="content" class="container_16">
+            <div id="contentWrap" class="clearfix">
+                <div id="pageContent" class="grid_10 prefix_3">
+                    {% block content %}
+                    {% if form.errors %}
+                        <h1>{% blocktrans count form.errors|length as counter %}Please correct the error below{% plural %}Please correct the errors below{% endblocktrans %}</h1>
+                        {% include "comments/form.html" %}
+                    {% else %}
+                        <h1>{% trans "Preview your comment" %}</h1>
+                        <blockquote>{{ comment|linebreaks }}</blockquote>
+                        <p>{% trans "and" %} <input type="submit" name="submit" class="submit-post" value="{% trans "Post your comment" %}" id="submit" /> {% trans "or make changes" %}:</p>
+                        {% include "comments/form.html" %}
+                    {% endif %}
+                    {% endblock %}
+                </div>
+            {% block sidebar %}{% endblock %}
+        </div>
+        {% block nav %}
+            {% include "includes/nav.html" %}
+        {% endblock %}
+        {% block breadcrumb %}
+            {% include "includes/breadcrumb.html" %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block secondaryContent %}{% endblock %}
+                    

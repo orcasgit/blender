@@ -1,0 +1,50 @@
+{% load webdesign tagging_tags %}
+
+<div id="sidebar" class="grid_8">
+    <div class="sidebarBlock clearfix">
+        <div id="navSidebar" class="grid_4 alpha">
+            <h4>Recent Posts</h4>
+            <ul>
+                <li><a href="">This is An Option That is Longer</a></li>
+                <li><a href="">Another Option</a></li>
+                <li><a href="">One More Option Another One Yet</a></li>
+                <li><a href="">This is An Option</a></li>
+                <li><a href="">What An Option Oh My Really?</a></li>
+            </ul>
+            <h4>Archives</h4>
+            <ul>
+                <li><a href="">April</a>, 2009</li>
+                <li><a href="">March</a>, 2009</li>
+                <li><a href="">Febuary</a>, 2009</li>
+                <li><a href="">January</a>, 2009</li>
+                <li><a href="">2008</a></li>
+                <li><a href="">2007</a></li>
+            </ul>
+            <h4>Tags</h4>
+            <p class="tags">
+                {% tag_cloud_for_model flatpages.flatpage as tags_list with steps=6 min_count=1 distribution=log %}
+                {% for tag in tags_list %}
+                    {% if not forloop.last %}
+                        <a href="/tags/{{ tag.name|slugify }}" class="tag-{{tag.font_size}}">{{ tag|capfirst }}</a>,
+                    {% else %}
+                        <a href="/tags/{{ tag.name|slugify }}" class="tag-{{tag.font_size}}">{{ tag|capfirst }}</a>
+                    {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+        <div id="extraSidebar" class="grid_4 omega">
+            <form action="index_submit" method="get" accept-charset="utf-8" id="loginForm" class="frFive">
+                <fieldset>
+                    <legend><span>Login Form</span></legend>
+                    <label for="username">Username</label><input type="text" name="username" value="" id="username">
+                    <label for="password">Password</label><input type="password" name="password" value="" id="password">
+                    <input type="submit" value="Login">
+                </fieldset>
+                <p class="forgot"><a href="">Forgot your password?</a></p>
+            </form>
+            <h4>Register</h4>
+            <p>If you do not already have an account, please create one and get started.</p>
+            <p><a href="">Create Account</a></p>
+        </div>
+    </div>
+</div>

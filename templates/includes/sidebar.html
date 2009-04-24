@@ -1,0 +1,45 @@
+{% load webdesign %}
+
+<div id="sidebar" class="grid_7">
+    <div class="sidebarBlock clearfix">
+        <div id="navSidebar" class="grid_4 alpha">
+            <h4>Local Nav Header</h4>
+            <ul>
+                <li><a href="">This is An Option That is Longer</a></li>
+                <li><a href="">Another Option</a></li>
+                <li><a href="">One More Option Another One Yet</a></li>
+                <li><a href="">This is An Option</a></li>
+                <li><a href="">What An Option Oh My Really?</a></li>
+                <li><a href="">This Is Something</a></li>
+                <li><a href="">One More Thing</a></li>
+            </ul>
+        </div>
+        <div id="extraSidebar" class="grid_3 omega">
+            <form action="index_submit" method="get" accept-charset="utf-8" id="loginForm" class="frFive">
+                <fieldset>
+                    <legend><span>Login Form</span></legend>
+                    <label for="username">Username</label><input type="text" name="username" value="" id="username">
+                    <label for="password">Password</label><input type="password" name="password" value="" id="password">
+                    <input type="submit" value="Login">
+                </fieldset>
+                <p class="forgot"><a href="">Forgot your password?</a></p>
+            </form>
+            <h4>Register</h4>
+            <p>If you do not already have an account, please create one and get started.</p>
+            <p><a href="">Create Account</a></p>
+        </div>
+    </div>
+    <h3 class="sectionHeader trFive">Article Snapshots</h3>
+    <div id="snapShots" class="sidebarBlock">
+        <div class="snapshot">
+            <h3>This is A Title</h3>
+            <cite>December 31, 2008</cite>
+            <p>{% lorem %}</p>
+        </div>
+        <div class="snapshot">
+            <h3>Another Title Snap</h3>
+            <cite>December 31, 2008</cite>
+            <p>{% lorem %}</p>
+        </div>
+    </div>
+</div>

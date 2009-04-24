@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% load markup webdesign comments %}
+
+{% block contentViewType %}detailView{% endblock %}
+
+{% block pageContent %}
+        <div id="content" class="container_16">
+            <div id="contentWrap" class="clearfix">
+                <div id="pageContent" class="grid_8">
+                    {% block content %}
+                        {% block contentTools %}
+                            {% include "includes/content_tools.html" %}
+                        {% endblock %}
+                        
+                        <h1 class="pageTitle">{{ flatpage.title }}</h1>
+                    
+                        {% block meta %}
+                            {% include "includes/meta.html" %}
+                        {% endblock %}
+                    
+                        {{ flatpage.content|textile }}
+                        
+                        {% get_comment_list for flatpage as comment_list %}
+                        {% include "includes/comment_list.html" %}
+                        
+                        {% render_comment_form for flatpage %}
+                        
+                    {% endblock %}
+                </div>
+            {% block sidebar %}
+                {% include "includes/blog_sidebar.html" %}
+            {% endblock %}
+        </div>
+        {% block nav %}
+            {% include "includes/nav.html" %}
+        {% endblock %}
+        {% block breadcrumb %}
+            {% include "includes/breadcrumb.html" %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block secondaryContent %}
+    {% include "includes/secondary_content.html" %}
+{% endblock %}
+
+{% block extraJS %}
+    <script type="text/javascript" charset="utf-8">
+        $(function() {
+          $('#comment_form').validate('{% url comment_form_validate %}', {fields: ['name', 'email', 'comment'], callback: validate_comment, event:'click', dom: $('a[id=postComment]') }});
+        });
+    </script>
+{% endblock %}

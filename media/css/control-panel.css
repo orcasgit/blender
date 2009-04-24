@@ -1,0 +1,19 @@
+/*
+	Control Panel CSS ~ Blender CSS.
+	The system Control Panel
+*/
+
+/* =General
+----------------------------------------------------------------------------*/
+#controlPanel {background:#262626; color:#777;}
+#controlPanelView {background:#404040; padding:18px 0 0;}
+.openPanel {display:block; width:80px; height:18px; line-height:18px; background:#262626; position:absolute; top:0; right:10px; text-align:center; color:#777; font-size:10px;}
+
+.gridOn {
+    background:url(../img/20px_grid.png);
+}
+
+/* =Typography
+----------------------------------------------------------------------------*/
+#controlPanel a {color:#fff}
+a.button {background:#000; text-align:center; line-height:24px; padding:0 9px; height:24px; width:60px; display:block; margin-bottom:18px;}

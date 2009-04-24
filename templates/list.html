@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% load markup webdesign tagging_tags %}
+
+{% block contentViewType %}listView{% endblock %}
+
+{% block pageContent %}
+        <div id="content" class="container_16">
+            <div id="contentWrap" class="clearfix">
+                <div id="pageContent" class="grid_9">
+                    {% block content %}
+                        {% block contentTools %}
+                            {% include "includes/content_tools.html" %}
+                        {% endblock %}
+                        
+                        <h1 class="pageTitle">{{ flatpage.title }}</h1>
+                        <ul class="itemList">
+                        <li class="clearfix">
+                            <div class="gravatar grid_1 alpha">
+                                <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
+                            </div>
+                            <div  class="listItem grid_8 omega">
+                                <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
+                                {% include "includes/meta.html" %}
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="gravatar grid_1 alpha">
+                                <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
+                            </div>
+                            <div  class="listItem grid_8 omega">
+                                <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
+                                {% include "includes/meta.html" %}
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="gravatar grid_1 alpha">
+                                <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
+                            </div>
+                            <div  class="listItem grid_8 omega">
+                                <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
+                                {% include "includes/meta.html" %}
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="gravatar grid_1 alpha">
+                                <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
+                            </div>
+                            <div  class="listItem grid_8 omega">
+                                <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
+                                {% include "includes/meta.html" %}
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="gravatar grid_1 alpha">
+                                <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
+                            </div>
+                            <div  class="listItem grid_8 omega">
+                                <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
+                                {% include "includes/meta.html" %}
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="gravatar grid_1 alpha">
+                                <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
+                            </div>
+                            <div  class="listItem grid_8 omega">
+                                <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
+                                {% include "includes/meta.html" %}
+                                <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </li>
+                        </ul>
+                        
+                    {% endblock %}
+                </div>
+            {% block sidebar %}
+                {% include "includes/sidebar.html" %}
+            {% endblock %}
+        </div>
+        {% block nav %}
+            {% include "includes/nav.html" %}
+        {% endblock %}
+        {% block breadcrumb %}
+            {% include "includes/breadcrumb.html" %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block secondaryContent %}
+        <div id="secondaryContent" class="container_16 clearfix frTen">
+                <div id="secondaryNotice" class="grid_4">
+                    <h3>a title for content</h3>
+                    <p>{% lorem 30 w %}</p>
+                </div>
+                <div id="secondaryNotice" class="grid_7">
+                    <h3>a title for content</h3>
+                    <p>{% lorem %}</p>
+                </div>
+                <div id="secondaryList" class="grid_5">
+                    <h3>recent items</h3>
+                        <ul class="objectBlock">
+                            <li><a href="">This would be a item</a></li>
+                            <li><a href="">Another Title for the bottom</a></li>
+                            <li><a href="">This is a bottom</a></li>
+                            <li><a href="">If I were a link</a></li>
+                        </ul>
+                </div>
+        </div>
+{% endblock %}

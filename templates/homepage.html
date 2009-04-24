@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load markup webdesign %}
+
+{% block bodyid %}home{% endblock %}
+{% block contentViewType %}detailView{% endblock %}
+
+        {% block pageContent %}
+        <div id="content" class="container_16">
+            <div id="contentWrap" class="clearfix">
+                <div id="messageBlock" class="grid_4">
+                    <h1 class="pageTitle">{{ flatpage.title }}</h1>
+                    {{ flatpage.content|textile }}
+                </div>
+                <div id="pageContent" class="grid_8">
+                    {% block content %}
+                        <img src="{{ MEDIA_URL }}img/eyes_slice.jpg" alt="Eyes" />
+                        <h2>This is a Title</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at ipsum et purus sollicitudin dignissim. In fermentum ipsum vel est. Nullam lobortis, augue hendrerit commodo hendrerit, elit leo laoreet elit, vitae vehicula justo ligula vitae sem. Nunc cursus. Sed ornare, nunc eu bibendum elementum, nisl justo congue massa, nec venenatis mi risus et eros. Vestibulum turpis nulla, porta nec, sodales non, posuere quis, nibh. Nulla faucibus. Integer semper consectetur urna.</p>
+                    {% endblock %}
+                </div>
+                    
+                {% block sidebar %}
+                    <div id="sidebar" class="grid_4">
+                        <h3>This is a Homepage Sidebar</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at ipsum et purus sollicitudin dignissim.</p>
+                    </div>
+                {% endblock %}
+                
+            </div>
+            {% block nav %}
+                {% include "includes/nav.html" %}
+            {% endblock %}
+            {% block breadcrumb %}{% endblock %}
+        </div>
+        {% endblock %}
+
+{% block extraJS %}
+    <script type="text/javascript" src="{{ MEDIA_URL }}js/jquery.carousel.js"></script>
+{% endblock %}

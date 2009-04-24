@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load markup webdesign %}
+
+{% block contentViewType %}detailView{% endblock %}
+
+{% block pageContent %}
+        <div id="content" class="container_16">
+            <div id="contentWrap" class="clearfix">
+                <div id="pageContent" class="grid_8">
+                    {% block content %}
+                        {% block contentTools %}
+                            {% include "includes/content_tools.html" %}
+                        {% endblock %}
+                        
+                        <h1 class="pageTitle">{{ flatpage.title }}</h1>
+                    
+                        {% block meta %}
+                            {% include "includes/meta.html" %}
+                        {% endblock %}
+                    
+                        {{ flatpage.content|textile }}
+                    {% endblock %}
+                </div>
+            {% block sidebar %}
+                {% include "includes/article_sidebar.html" %}
+            {% endblock %}
+        </div>
+        {% block nav %}
+            {% include "includes/nav.html" %}
+        {% endblock %}
+        {% block breadcrumb %}
+            {% include "includes/breadcrumb.html" %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block secondaryContent %}
+    {% include "includes/secondary_content.html" %}
+{% endblock %}

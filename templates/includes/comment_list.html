@@ -1,0 +1,9 @@
+{% if comment_list %}
+<h3>Comments</h3>
+<ol class="comments">
+{% for comment in comment_list %}
+    <li class="{% cycle 'odd' 'even' %}">{{ comment.comment|linebreaks }}
+    <p><a href="{{ comment.url }}">{{ comment.name }}</a> on <strong>{{ comment.submit_date|date }}</strong></p></li>
+{% endfor %}
+</ol>
+{% endif %}

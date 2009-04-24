@@ -1,0 +1,8 @@
+#masthead, #sidebar, #contentTools, .nav, #breadcrumb, #secondaryContent, #footer, .tags  {
+	display:none;
+}
+
+#content {font-family:Helvetica, Arial, sans-serif; line-height:20px; color:#777;}
+
+.metaBlock {list-style:none; margin:0; padding:0; display:block; border-bottom:1px solid #ccc; font-size:12px; line-height:18px;}
+.metaBlock dt, .metaBlock dd {display:inline; margin:0 10px 0 0;}

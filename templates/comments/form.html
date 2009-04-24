@@ -1,0 +1,54 @@
+{% load comments i18n jquery_validation %}
+
+{% include_validation %}
+<form action="{% comment_form_target %}" method="POST" class="contentForm frTen" id="comment_form">
+    <fieldset id="comment" class="infoForm clearfix frFive">
+        <legend class="trFive"><span class="trFive">Your Comment</span></legend>
+        <dl class="clearfix">
+            <dt class="required">{{ form.name.label_tag }}</dt>
+            <dd>
+                {{ form.name }}
+                {% if form.name.errors %}
+                    <div class="error">
+                        <p>{{ form.name.errors }}</p>
+                    </div>
+                {% endif %}
+            </dd>
+            <dt class="required">{{ form.email.label_tag }}</dt>
+            <dd>{{ form.email }}
+                {% if form.email.errors %}
+                    <div class="error">
+                        <p>{{ form.email.errors }}</p>
+                    </div>
+                {% endif %}
+            </dd>
+            <dt>{{ form.url.label_tag }}</dt>
+            <dd>
+                {{ form.url }}
+                {% if form.url.errors %}
+                    <div class="error">
+                        <p>{{ form.url.errors }}</p>
+                    </div>
+                {% endif %}
+            </dd>
+            <dt class="required">{{ form.comment.label_tag }}</dt>
+            <dd class="textareaObject">
+                {{ form.comment }}
+                {% if form.comment.errors %}
+                    <div class="error">
+                        <p>{{ form.comment.errors }}</p>
+                    </div>
+                {% endif %}
+            </dd>
+        </dl>
+    </fieldset>
+    <input type="submit" name="preview" value="Preview" class="formButton">
+    <input type="button" name="cancel" value="Cancel" class="formButton">
+    <a href="#" id="postComment">Post Comment</a>
+    <div style="display:none;">{{ form.honeypot }}</div>
+	{{ form.content_type }}
+	{{ form.object_pk }}
+	{{ form.timestamp }}
+	{{ form.security_hash }}
+    
+</form>
