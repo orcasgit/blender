@@ -34,3 +34,7 @@ form#loginForm {padding:10px; background:#efefef; margin:0 0 30px;}
 #emailForm {
 	width:420px;
 }
+
+.close {
+    background:#777; padding:5px 10px; color:#fff;
+}
