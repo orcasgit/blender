@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% load markup webdesign %}
+
+{% block contentViewType %}detailView{% endblock %}
+
+{% block pageContent %}
+        <div id="content" class="container_16">
+            <div id="contentWrap" class="clearfix">
+                <div id="pageContent" class="grid_12 prefix_2">
+                    {% block content %}
+                        {% block contentTools %}{% endblock %}
+                        
+                        <h1 class="pageTitle">{{ flatpage.title }}</h1> 
+                        <div id="accountTabs">
+                            <ul class="clearfix">
+                                <li><a href="#profile">Profile</a></li>
+                                <li><a href="#password">Password</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact Information</a></li>
+                            </ul>
+                            <div id="profile">
+                                <h2>Your Profile</h2>
+                            </div>
+                            <div id="password">
+                                <h2>Edit Your Password</h2>
+                            </div>
+                            <div id="services">
+                                <h2>Other Services</h2>
+                            </div>
+                            <div id="contact">
+                                <h2>Contact Information</h2>
+                            </div>
+                        </div>
+                    {% endblock %}
+                </div>
+        </div>
+        {% block nav %}
+            {% include "includes/nav.html" %}
+        {% endblock %}
+        {% block breadcrumb %}
+            {% include "includes/breadcrumb.html" %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block secondaryContent %}
+    {% include "includes/secondary_content.html" %}
+{% endblock %}
