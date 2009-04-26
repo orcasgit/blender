@@ -9,7 +9,7 @@ form {margin:0 0 20px;}
 .contentForm {padding:10px; background:#ccc;}
 .contentForm legend {position:relative;}
 .contentForm legend span {position:absolute; top:-26px; right:10px; left:-10px; background:#808080; height:26px; line-height:26px; font-weight:bold; padding-left:5px; color:#F2F2F2;}
-.contentForm fieldset {padding:26px 10px 10px; background:#e6e6e6; margin:0 0 10px 0; position:relative;}
+.contentForm fieldset, #emailSent {padding:26px 10px 10px; background:#e6e6e6; margin:0 0 10px 0; position:relative;}
 .contentForm dl {margin:0; padding:0;}
 
 .contentForm dl {padding:0; margin:0;}

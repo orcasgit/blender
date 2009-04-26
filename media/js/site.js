@@ -27,6 +27,19 @@ $(document).ready(function(){
 		return false;
 	});
 	
-	$('.sendEmail').facebox()
+	$('.sendEmail').facebox();
+	
+	$(document).bind('reveal.facebox', function() {
+      $('#emailSent').hide();
+      $('#sendEmail').click(function() {
+        $('.contentForm').remove();
+        $('#emailSent').show();
+        return false;
+      });
+      $('.close').click(function() {
+        $(this).trigger('close.facebox')
+      });
+    });
+    
 	
 });
