@@ -85,9 +85,10 @@ div.close li {display:inline; padding:0 5px; margin:0;}
 
 /* =Tabs
 ----------------------------------------------------------------------------*/
-.ui-tabs-nav {list-style:none;}
-.ui-state-default, .ui-state-active {width:auto; height:20px; padding:0px 10px; float:left; margin:0 1px 0 0;}
-.ui-state-default {background:#ccc; color:#777;}
+.ui-tabs-nav {list-style:none; background:#EFEFEF; padding:5px;}
+.ui-state-default, .ui-state-active {width:auto; height:20px; padding:0px 10px; float:left; margin:0 5px 0 0;}
+.ui-state-default {background:#ccc;}
+.ui-state-default a {color:#777;}
 .ui-state-active {background:#777;}
 .ui-state-active a {color:#fff;}
 .ui-tabs-hide {display:none;}
