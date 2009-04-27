@@ -44,27 +44,4 @@ $(document).ready(function(){
     
 	$('#accountTabs').tabs();
 	
-	// Column Control
-	$('.oneColumnLayout').click(function() {
-		$('#sidebar').hide();
-		$('#pageContent').addClass('prefix_4').removeClass('prefix_2');
-		$(this).addClass('active').parent().siblings().children('a').removeClass('active');
-		return false;
-	});
-	
-	$('.twoColumnLayout').click(function() {
-		$('#pageContent').addClass('prefix_2').removeClass('prefix_4');
-		$('#sidebar').show().addClass('grid_4').removeClass('grid_8');
-		$('#extraSidebar').hide();
-		$(this).addClass('active').parent().siblings().children('a').removeClass('active');
-		return false;
-	});
-	
-	$('.threeColumnLayout').click(function() {
-		$('#pageContent').removeClass('prefix_4, prefix_2');
-		$('#sidebar').show().addClass('grid_8').removeClass('grid_4');
-		$('#extraSidebar').show();
-		$(this).addClass('active').parent().siblings().children('a').removeClass('active');
-		return false;
-	});
 });
