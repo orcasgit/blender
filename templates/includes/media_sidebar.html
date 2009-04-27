@@ -1,6 +1,6 @@
-{% load webdesign %}
+{% load webdesign tagging_tags %}
 
-<div id="sidebar" class="grid_7">
+<div id="sidebar" class="grid_8">
     <div class="sidebarBlock clearfix">
         <div id="navSidebar" class="grid_4 alpha">
             <h4>Local Nav Header</h4>
@@ -13,6 +13,17 @@
                 <li><a href="">This Is Something</a></li>
                 <li><a href="">One More Thing</a></li>
             </ul>
+            <h4>Tags</h4>
+            <p class="tags">
+                {% tag_cloud_for_model flatpages.flatpage as tags_list with steps=6 min_count=1 distribution=log %}
+                {% for tag in tags_list %}
+                    {% if not forloop.last %}
+                        <a href="/tags/{{ tag.name|slugify }}" class="tag-{{tag.font_size}}">{{ tag|capfirst }}</a>,
+                    {% else %}
+                        <a href="/tags/{{ tag.name|slugify }}" class="tag-{{tag.font_size}}">{{ tag|capfirst }}</a>
+                    {% endif %}
+                {% endfor %}
+            </p>
         </div>
         <div id="extraSidebar" class="grid_4 omega">
             <form action="index_submit" method="get" accept-charset="utf-8" id="loginForm" class="frFive">
@@ -27,19 +38,6 @@
             <h4>Register</h4>
             <p>If you do not already have an account, please create one and get started.</p>
             <p><a href="">Create Account</a></p>
-        </div>
-    </div>
-    <h3>Article Snapshots</h3>
-    <div id="snapShots" class="sidebarBlock">
-        <div class="snapshot">
-            <h4>This is A Title</h4>
-            <cite>December 31, 2008</cite>
-            <p>{% lorem %}</p>
-        </div>
-        <div class="snapshot">
-            <h4>Another Title Snap</h4>
-            <cite>December 31, 2008</cite>
-            <p>{% lorem %}</p>
         </div>
     </div>
 </div>

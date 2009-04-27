@@ -26,11 +26,13 @@ body#home #content {padding:22px 0 0 0;}
 .navBlock li a {padding:0 10px; width:auto; height:36px; line-height:36px; display:block; float:left; color:#D8D8D8; text-decoration:none; font-weight:bold;}
 .navBlock li a:hover {background:#fff; color:#404040;}
 
-#breadcrumb {list-style:none; font-size:8px; position:absolute; height:30px; line-height:30px; background:#D8D8D8; top:0;}
-#breadcrumb li {margin:0 10px; display:inline; border-right:1px solid #ccc;}
+#contentToolsBlock {list-style:none; font-size:10px; position:absolute; height:30px; line-height:30px; background:#D8D8D8; top:0;}
+#contentToolsBlock li {margin:0 10px; display:inline; border-right:1px solid #ccc;}
 
-#contentTools ul {margin:0 0 20px; padding:0; text-align:right; list-style:none; height:20px;}
-#contentTools ul li {padding:0 5px; margin:0; display:inline;}
+#breadcrumb {float:left;}
+
+#contentTool {margin:0 0 20px; padding:0; text-align:right; list-style:none; height:20px; width:250px; float:right;}
+#contentTool li {padding:0 5px; margin:0; display:inline;}
 
 #snapShot {padding:0 10px 0; margin:10px 0 20px; background:#ccc; border:1px solid #B3B3B3;}
 

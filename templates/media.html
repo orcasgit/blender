@@ -16,12 +16,10 @@
                             {% include "includes/meta.html" %}
                         {% endblock %}
                     
-                        {{ flatpage.content|textile }}
+                        {{ flatpage.content|safe }}
                     {% endblock %}
                 </div>
-            {% block sidebar %}
-                {% include "includes/article_sidebar.html" %}
-            {% endblock %}
+            {% block sidebar %}{% include "includes/media_sidebar.html" %}{% endblock %}
         </div>
         {% block nav %}
             {% include "includes/nav.html" %}

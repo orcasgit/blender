@@ -7,11 +7,8 @@
 {% block pageContent %}
         <div id="content" class="container_16">
             <div id="contentWrap" class="clearfix">
-                <div id="pageContent" class="grid_9">
+                <div id="pageContent" class="grid_8">
                     {% block content %}
-                        {% block contentTools %}
-                            {% include "includes/content_tools.html" %}
-                        {% endblock %}
                         
                         <h1 class="pageTitle">{{ flatpage.title }}</h1>
                         <ul class="itemList">
@@ -19,7 +16,7 @@
                             <div class="gravatar grid_1 alpha">
                                 <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
                             </div>
-                            <div  class="listItem grid_8 omega">
+                            <div  class="listItem grid_7 omega">
                                 <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
                                 {% include "includes/meta.html" %}
                                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -29,7 +26,7 @@
                             <div class="gravatar grid_1 alpha">
                                 <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
                             </div>
-                            <div  class="listItem grid_8 omega">
+                            <div  class="listItem grid_7 omega">
                                 <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
                                 {% include "includes/meta.html" %}
                                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -39,7 +36,7 @@
                             <div class="gravatar grid_1 alpha">
                                 <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
                             </div>
-                            <div  class="listItem grid_8 omega">
+                            <div  class="listItem grid_7 omega">
                                 <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
                                 {% include "includes/meta.html" %}
                                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -49,7 +46,7 @@
                             <div class="gravatar grid_1 alpha">
                                 <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
                             </div>
-                            <div  class="listItem grid_8 omega">
+                            <div  class="listItem grid_7 omega">
                                 <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
                                 {% include "includes/meta.html" %}
                                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -59,7 +56,7 @@
                             <div class="gravatar grid_1 alpha">
                                 <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
                             </div>
-                            <div  class="listItem grid_8 omega">
+                            <div  class="listItem grid_7 omega">
                                 <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
                                 {% include "includes/meta.html" %}
                                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -69,7 +66,7 @@
                             <div class="gravatar grid_1 alpha">
                                 <img src="http://farm4.static.flickr.com/3547/3407668757_c58b2b091b_s.jpg" alt="Emma" class="thumb" />
                             </div>
-                            <div  class="listItem grid_8 omega">
+                            <div  class="listItem grid_7 omega">
                                 <h3><a href="">Lorem Ipsum Dolor Sit Amet</a></h3>
                                 {% include "includes/meta.html" %}
                                 <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -80,14 +77,14 @@
                     {% endblock %}
                 </div>
             {% block sidebar %}
-                {% include "includes/sidebar.html" %}
+                {% include "includes/list_sidebar.html" %}
             {% endblock %}
         </div>
         {% block nav %}
             {% include "includes/nav.html" %}
         {% endblock %}
         {% block breadcrumb %}
-            {% include "includes/breadcrumb.html" %}
+            {% include "includes/content_tools.html" %}
         {% endblock %}
     </div>
 {% endblock %}

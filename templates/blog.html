@@ -9,9 +9,6 @@
             <div id="contentWrap" class="clearfix">
                 <div id="pageContent" class="grid_8">
                     {% block content %}
-                        {% block contentTools %}
-                            {% include "includes/content_tools.html" %}
-                        {% endblock %}
                         
                         <h1 class="pageTitle">{{ flatpage.title }}</h1>
                     
@@ -36,7 +33,7 @@
             {% include "includes/nav.html" %}
         {% endblock %}
         {% block breadcrumb %}
-            {% include "includes/breadcrumb.html" %}
+            {% include "includes/content_tools.html" %}
         {% endblock %}
     </div>
 {% endblock %}

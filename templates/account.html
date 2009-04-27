@@ -8,9 +8,7 @@
         <div id="content" class="container_16">
             <div id="contentWrap" class="clearfix">
                 <div id="pageContent" class="grid_12 prefix_2">
-                    {% block content %}
-                        {% block contentTools %}{% endblock %}
-                        
+                    {% block content %}                        
                         <h1 class="pageTitle">{{ flatpage.title }}</h1> 
                         <div id="accountTabs">
                             <ul class="clearfix frTen">
@@ -43,7 +41,7 @@
             {% include "includes/nav.html" %}
         {% endblock %}
         {% block breadcrumb %}
-            {% include "includes/breadcrumb.html" %}
+            {% include "includes/content_tools.html" %}
         {% endblock %}
     </div>
 {% endblock %}
