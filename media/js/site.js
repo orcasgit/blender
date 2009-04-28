@@ -1,19 +1,3 @@
-function validate_comment(data, form) {
-  if (data.valid) {
-    var next = form[0].next.value;
-    // form is valid, so it is safe to post a new comment
-    var form_data = form.serialize();
-    $.post("/comments/post/", form_data, show_comment_msg(next));
-  }
-}
- 
-function show_comment_msg(next) {
-  // effect(effect type,options,speed,callback)
-  $('#comment-popin').show("highlight", {}, 2000, function() {
-    window.location.href = next;  //window.location.reload();
-  });
-}
-
 $(document).ready(function(){
     
 	$('.error').hide();

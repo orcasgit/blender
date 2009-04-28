@@ -15,8 +15,11 @@
                         {% block meta %}
                             {% include "includes/meta.html" %}
                         {% endblock %}
-                    
-                        {{ flatpage.content|safe }}
+                        
+                        <div id="mediaBlock">
+                            {{ flatpage.content|safe }}
+                        </div>
+                        
                     {% endblock %}
                 </div>
             {% block sidebar %}{% include "includes/media_sidebar.html" %}{% endblock %}

@@ -34,6 +34,8 @@ body#home #content {padding:22px 0 0 0;}
 #contentTool {margin:0 0 20px; padding:0; text-align:right; list-style:none; height:20px; width:250px; float:right;}
 #contentTool li {padding:0 5px; margin:0; display:inline;}
 
+#mediaBlock {height:300px;}
+
 #snapShot {padding:0 10px 0; margin:10px 0 20px; background:#ccc; border:1px solid #B3B3B3;}
 
 div.close {margin:0 -10px; padding:5px 10px; background:#b3b3b3;}
@@ -75,9 +77,9 @@ div.close li {display:inline; padding:0 5px; margin:0;}
 #localNav ul {margin:0; padding:0; list-style:none;}
 #localNav li {padding:0; margin:0 0 5px 0;}
 
-#secondaryContent {background:#d9d9d9; padding-top:10px; margin:0 auto 20px;}
+#secondaryContent {background:#d9d9d9; padding:10px 0 0; margin:0 auto 20px;}
 
-#footer {background:#efefef; padding:10px 0; margin:0 auto 20px;}
+#footer {background:#efefef; padding:10px 0; margin:0 auto 20px; clear:both;}
 #footer .nav {position:relative; top:0; left:0; padding:0; margin:0 0 0 10px; height:auto; background:none; width:100%; list-style:none;}
 #footer .nav li {display:inline; padding:0 10px 0 0; margin:0;}
 
