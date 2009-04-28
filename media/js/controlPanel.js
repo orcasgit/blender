@@ -37,29 +37,38 @@ $(document).ready(function(){
     });
     
     // Column Control
+	$('#columns .submenu').hide();
+	
     $('.oneColumnLayout').click(function() {
         $('#sidebar').hide();
-        $('#pageContent').addClass('prefix_4').removeClass('prefix_2');
+        $('#pageContent').addClass('prefix_4').addClass('grid_8').removeClass('prefix_2').removeClass('prefix_3').removeClass('grid_10').removeClass('prefix_16');
         $(this).addClass('active').parent().siblings().children('a').removeClass('active');
+		$('.oneSubMenu').show('fast');
         $.cookie('cols', 'one', { expires: 7, path: '/', domain: '127.0.0.1'});
         return false;
     });
+
+	$('.oneColMed').click(function() {
+		$('#pageContent').addClass('prefix_3').addClass('grid_10').removeClass('prefix_4').removeClass('grid_8');
+	});
     
     $('.twoColumnLayout').click(function() {
-        $('#pageContent').addClass('prefix_2').removeClass('prefix_4');
+        $('#pageContent').addClass('prefix_2').addClass('grid_8').removeClass('prefix_4').removeClass('prefix_3').removeClass('grid_10');
         $('#sidebar').show().addClass('grid_4').removeClass('grid_8');
         $('#extraSidebar').hide();
         $(this).addClass('active').parent().siblings().children('a').removeClass('active');
         $.cookie('cols', 'two', { expires: 7, path: '/', domain: '127.0.0.1'});
+		$('#columns .oneSubMenu').hide('fast');
         return false;
     });
     
     $('.threeColumnLayout').click(function() {
-        $('#pageContent').removeClass('prefix_4').removeClass('prefix_2');
+        $('#pageContent').removeClass('prefix_4').removeClass('prefix_2').removeClass('grid_10').removeClass('prefix_3').addClass('grid_8');
         $('#sidebar').show().addClass('grid_8').removeClass('grid_4');
         $('#extraSidebar').show();
         $(this).addClass('active').parent().siblings().children('a').removeClass('active');
         $.cookie('cols', 'three', { expires: 7, path: '/', domain: '127.0.0.1'});
+		$('#columns .oneSubMenu').hide('fast');
         return false;
     });
     
@@ -68,6 +77,7 @@ $(document).ready(function(){
     if(cols == 'one'){
         $('#sidebar').hide();
         $('#pageContent').addClass('prefix_4').removeClass('prefix_2');
+		$('#columns .oneSubMenu').show();
     };
     
 	//alert('here');
