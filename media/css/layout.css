@@ -55,7 +55,7 @@ div.close li {display:inline; padding:0 5px; margin:0;}
 .itemList li {padding:0; margin:0 0 40px;}
 
 .detailView .metaBlock {border-bottom:1px dotted #777;}
-.listView .metaBlock {border-bottom:1px dotted #777; margin-bottom:5px; padding-bottom:5px; color:#777;}
+.listView .metaBlock {border-bottom:1px dotted #777; margin-bottom:19px; color:#777;}
 
 .largeImage img {width:460px; height:266px;}
 

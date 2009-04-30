@@ -15,7 +15,7 @@ form {margin:0 0 20px;}
 .contentForm dl {padding:0; margin:0;}
 .contentForm dt {width:20%; float:left; text-align:right; height:24px; font-size:83%; line-height:24px; margin:10px 0 0;}
 .contentForm dd {width:79%; float:right; height:24px; margin:10px 0 0; position:relative;}
-.contentForm dd input[type="text"] {width:275px;}
+.contentForm dd input[type="text"], .contentForm dd input[type="password"] {width:275px;}
 .contentForm dd.textareaObject {height:100px; margin:10px 0 0;}
 .contentForm textarea {height:90px; width:275px;}
 .contentForm fieldset input, form fieldset textarea {border:1px solid #808080; padding:4px; background:#F2F2F2;}

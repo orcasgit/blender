@@ -1,0 +1,36 @@
+{% load webdesign %}
+
+<form action="" method="get" accept-charset="utf-8"  class="contentForm frTen">
+    <fieldset id="oldPassword" class="infoForm clearfix frFive">
+        <legend><span class="trFive">Profile</span></legend>
+        <dl class="clearfix">
+            <dt><label for="username">Username</label></dt>
+            <dd><input type="username" name="username" value="" id="username"></dd>
+            <dt><label for="comment">Description</label></dt>
+            <dd><textarea name="comment"></textarea></dd>
+            <dt><label for="username">Gravatar</label></dt>
+            <dd><input type="username" name="username" value="" id="username"></dd>
+        </dl>
+    </fieldset>
+    <div><input type="submit" value="Save"></div>
+</form>
+
+<h3>Friends</h3>
+<div id="friends">
+    <img src="http://www.gravatar.com/avatar/3f3cd92849c7b4332396a4f5e4a97162?s=80" alt="Dave Merwin" />
+    <h3><a href="">Dave Merwin</a></h3>
+    <p>Blender is a great tool for everyone to use.</p>
+    <p>{% lorem %}</p>
+    <a href="">Message</a>
+    <a href="">Remove</a>
+    <form action="messageFriend" method="post" accept-charset="utf-8" class="inlineForm">
+        <fieldset id="inlineMessage" class="clearfix">
+            <legend><span>Message Dave Merwin</span></legend>
+            <dl>
+                <dt><label for="comment">Message</label></dt>
+                <dd><textarea name="comment"></textarea></dd>
+            </dl>
+        </fieldset>
+        <div><input type="submit" value="Send"></div>
+    </form>
+</div>

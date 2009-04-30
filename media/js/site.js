@@ -28,5 +28,6 @@ $(document).ready(function(){
     
 	$('#accountTabs').tabs();
 	$('#tunnelTabs').tabs();
+	$('#imageTabs').tabs();
 	
 });
