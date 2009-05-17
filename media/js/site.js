@@ -30,4 +30,6 @@ $(document).ready(function(){
 	$('#tunnelTabs').tabs();
 	$('#imageTabs').tabs();
 	
+	$('.altImages li').append('<a href="#" class="editImage">Edit</a>')
+	
 });
