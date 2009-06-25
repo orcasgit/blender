@@ -31,11 +31,34 @@ body {font-size:14px; color:#404040;}
 p {margin-bottom:20px; line-height:20px;}
 
 h1, h2, h3 {letter-spacing:-1px;}
-h1 {font-size:30px; line-height:40px; font-weight:bold; margin-bottom: 20px;}
-h2 {font-size:24px; line-height:30px; font-weight:bold; margin-bottom: 20px;}
-h3 {font-size:20px; line-height:20px; font-weight:bold; margin-bottom: 20px;}
-h4 {font-size:18px; line-height:20px; font-weight:bold; margin-bottom: 20px;}
-h5 {font-size:inherit; font-weight:bold; margin:0;}
+h1 {font-size:30px;
+	line-height:40px;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+
+h2 {font-size:24px;
+	line-height:30px;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+
+h3 {font-size:20px;
+	line-height:20px;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+
+h4 {font-size:18px;
+	line-height:20px;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+
+h5 {font-size:inherit;
+	font-weight:bold;
+	margin:0;
+}
 
 ul, ol { margin:0 0 20px 0; }
 li {margin:0; padding:0;}

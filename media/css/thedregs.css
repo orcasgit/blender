@@ -11,3 +11,29 @@
 /* End of hack */
 
 p.mir {line-height:0;}
+
+/* http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after
+{
+    clear: both;
+    content: '.';
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfix
+{
+    display: inline-block;
+}
+
+* html .clearfix
+{
+    height: 1%;
+}
+
+.clearfix
+{
+    display: block;
+}
