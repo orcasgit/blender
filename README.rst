@@ -11,10 +11,8 @@ Features
 
 * HTML 4 Strict
 * Natural, related font sizing
-* PSD's for settings standards and demoing
 * All design is CSS, JS and HTML. No graphics
 * Uses 960.gs for grid layout and CSS name conventions
-* Uses google.load and the jQuery 1.3* for Javascript
 
 Layouts
 =======
