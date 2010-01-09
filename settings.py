@@ -7,6 +7,8 @@ TEMPLATE_DEBUG = DEBUG
 
 PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 
+INTERNAL_IPS = ('127.0.0.1',)
+
 ADMINS = (
     # ('Your Name', 'your_email@domain.com'),
 )
@@ -66,6 +68,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.flatpages.middleware.FlatpageFallbackMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 ROOT_URLCONF = 'blender.urls'
@@ -88,4 +91,5 @@ INSTALLED_APPS = (
     
     'ajax_validation',
     'tagging',
+    'debug_toolbar',
 )

@@ -1,10 +1,11 @@
 /*
 	Typography ~ Blender CSS.
 	Typography style sheet
+	Dave Merwin: dave@davemerwin.com
 	
 	Thanks to Mark Boulton for the ratios to correctly indicate font size hierarchy.
 	
-	Given a 12px font as body copy and the baseline for the sites the sites Typography will work aas follows:
+	Given a 12px font as body copy and the baseline for the sites the sites Typography will work as follows:
 	50%(6px), 66%(8px), 75%(9px), 83%(10px), 91%(11px), 116%(14px), 150%(20px), 200%(24px), 250%(30px), 300%(36px), 400%(48px), 500%(60px), 600%(72px)
 	
 	or...
@@ -18,7 +19,7 @@
 		
 	Feel free to change based on your ultimate goals.
 	
-	Or... you can just use pixels ;-)
+	Or... you can just use pixels, which is what I've done here ;-)
 	
 */
 
@@ -35,9 +36,9 @@ body {font-size:14px; color:#404040; font-family:"Lucida Grande", Arial, sans-se
 p {margin-bottom:20px; line-height:1.5em;}
 
 h1, h2, h3 {letter-spacing:-1px;}
-h1 {font-size:30px; line-height:40px; font-weight:normal;}
+h1 {font-size:30px; line-height:36px; font-weight:normal;}
 h2 {font-size:24px; line-height:30px; font-weight:normal;}
-h3 {font-size:20px; line-height:20px; font-weight:normal;}
+h3 {font-size:18px; line-height:24px; font-weight:normal;}
 h4, .treeMaster {font-size:18px; line-height:20px; font-weight:normal;}
 h5 {font-size:inherit;}
 
