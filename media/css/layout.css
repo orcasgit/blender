@@ -1,100 +1,26 @@
 /*
-	Layout ~ Blender CSS.
-	Layout style sheet
+	Layout ~ CSS
+	
+	Licensed under GPL and MIT.
 */
 
-/* =Layout
+/* =General
 ----------------------------------------------------------------------------*/
-body {color:#F2F2F2;}
 
-#viewer {background:#fff;}
-
-.objectBlock {padding:10px 10px 0;}
-
-#masthead {background:#777; height:100px;}
-
-#masthead .block {position:relative; }
-
-#searchBlock {position:absolute; right:10px; top:10px;}
-
-#content {position:relative; padding:40px 0 0 0;}
-body#home #content {padding:22px 0 0 0;}
-
-.nav {position:absolute; top:-36px; left:0; right:0; height:36px; background:#404040;}
-.navBlock {list-style:none;}
-.navBlock li {margin:0; padding:0; display:inline;}
-.navBlock li a {padding:0 10px; width:auto; height:36px; line-height:36px; display:block; float:left; color:#D8D8D8; text-decoration:none; font-weight:bold;}
-.navBlock li a:hover {background:#fff; color:#404040;}
-
-#contentToolsBlock {list-style:none; font-size:10px; position:absolute; height:30px; line-height:30px; background:#D8D8D8; top:0;}
-#contentToolsBlock li {margin:0 10px; display:inline; border-right:1px solid #ccc;}
-
-#breadcrumb {float:left;}
-
-#contentTool {margin:0 0 20px; padding:0; text-align:right; list-style:none; height:20px; width:250px; float:right;}
-#contentTool li {padding:0 5px; margin:0; display:inline;}
-
-#mediaBlock {height:300px;}
-
-#snapShot {padding:0 10px 0; margin:10px 0 20px; background:#ccc; border:1px solid #B3B3B3;}
-
-div.close {margin:0 -10px; padding:5px 10px; background:#b3b3b3;}
-div.close ul {margin:0; padding:0; width:50%; text-align:right; float:right; list-style:none;}
-div.close li {display:inline; padding:0 5px; margin:0;}
-
-.sidebarBlock {margin:0 0 18px;}
-
-.sidebarBlock ul {margin:0 0 20px; list-style:none;}
-.sidebarBlock li {margin:0; padding:0; line-height:20px;}
-
-.metaBlock {margin-bottom:17px;}
-.metaBlock ul, .metaBlock dl {padding:0; margin:0; list-style:none;}
-.metaBlock ul li, .metaBlock dt, .metaBlock dd {padding:0; margin:0; display:inline;}
-
-.itemList {padding:0; margin:0; list-style:none;}
-.itemList li {padding:0; margin:0 0 40px;}
-
-.detailView .metaBlock {border-bottom:1px dotted #777;}
-.listView .metaBlock {border-bottom:1px dotted #777; margin-bottom:19px; color:#777;}
-
-.largeImage img {width:460px; height:266px;}
-
-.altImages {padding:0; margin:0 0 20px; list-style:none;}
-.altImages li {margin:0 10px 0 0; padding:0; width:100px; height:67px; overflow:hidden; display:block; float:left; position:relative;}
-.altImages li a {width:100px; height:67px; display:block; float:left;}
-.altImages img {width:120px; height:79px;}
-
-.altImages .editImage {position:absolute; bottom:0px; left:0px; right:0px; display:block; background:#000; height:12px; line-height:12px; padding:4px;}
-
-#preview {height:190px; position:absolute; top:36px; left:0; right:0;}
-#previewBlock {background:#E6E6E6; position:relative;}
-#previewBlock p.close {position:absolute; bottom:0; right:0; margin:0; text-align:right; background:#E6E6E6; width:100%; padding:2px 0;}
-#previewBlock p.close a {margin:0 10px 0 0;}
-#preview1, #preview2, #preview3, #preview4 {padding:10px;}
-#preview1 {background:#CCC;}
-#preview2 {background:#BFBFBF;}
-#preview3 {background:#B3B3B3;}
-#preview4 {background:#999999;}
-
-#localNav ul {margin:0; padding:0; list-style:none;}
-#localNav li {padding:0; margin:0 0 5px 0;}
-
-#secondaryContent {background:#d9d9d9; padding:10px 0 0; margin:0 auto 20px;}
-
-#footer {background:#efefef; padding:10px 0; margin:0 auto 20px; clear:both;}
-#footer .nav {position:relative; top:0; left:0; padding:0; margin:0 0 0 10px; height:auto; background:none; width:100%; list-style:none;}
-#footer .nav li {display:inline; padding:0 10px 0 0; margin:0;}
-
-/* =Comments
+/* =Masthead
 ----------------------------------------------------------------------------*/
-.comments {padding:0; margin:0;}
+
+/* =Nav
+----------------------------------------------------------------------------*/
+
+/* =Content
+----------------------------------------------------------------------------*/
+
+/* =Footer
+----------------------------------------------------------------------------*/
+
+/* =Tables
+----------------------------------------------------------------------------*/
 
 /* =Tabs
 ----------------------------------------------------------------------------*/
-.ui-tabs-nav {list-style:none; background:#EFEFEF; padding:5px;}
-.ui-state-default, .ui-state-active {width:auto; height:20px; padding:0px 10px; float:left; margin:0 5px 0 0;}
-.ui-state-default {background:#ccc;}
-.ui-state-default a {color:#777;}
-.ui-state-active {background:#777;}
-.ui-state-active a {color:#fff;}
-.ui-tabs-hide {display:none;}

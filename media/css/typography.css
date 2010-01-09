@@ -23,26 +23,42 @@
 	
 */
 
-/* =Typography
-----------------------------------------------------------------------------*/
-body {font-size:14px; color:#404040;}
-
-/* =Typography
-----------------------------------------------------------------------------*/
-body {font-size:14px; color:#404040; font-family:"Lucida Grande", Arial, sans-serif;}
-
 /* =Baseline Grid
 ----------------------------------------------------------------------------*/
-p {margin-bottom:20px; line-height:1.5em;}
+body {
+	font-size:14px;
+}
 
-h1, h2, h3 {letter-spacing:-1px;}
-h1 {font-size:30px; line-height:36px; font-weight:normal;}
-h2 {font-size:24px; line-height:30px; font-weight:normal;}
-h3 {font-size:18px; line-height:24px; font-weight:normal;}
-h4, .treeMaster {font-size:18px; line-height:20px; font-weight:normal;}
-h5 {font-size:inherit;}
+h1 {
+	font-size:36px;
+	line-height:42px;
+}
+h2 {
+	font-size:30px;
+	line-height:36px;
+}
+h3 {
+	font-size:24px;
+	line-height:30px;
+}
+h4 {
+	font-size:18px;
+	line-height:24px;
+}
+h5 {
+	font-size:inherit;
+	line-height:20px;
+}
 
-li {margin:0; padding:0; line-height:20px;}
+p {
+	line-height:20px;
+}
+
+li {
+	margin:0;
+	padding:0;
+	line-height:20px;
+}
 
 p,
 dl,
@@ -58,38 +74,40 @@ ul,
 pre,
 table,
 address,
-fieldset { margin:0 0 20px 0; }
+fieldset {
+	margin:0 0 20px 0;
+}
 
 a:focus {
 	outline: 1px dotted invert;
 }
 
+ul {
+    list-style:disc;
+}
+
+ol {
+    list-style:decimal;
+}
+
 /* =General
 ----------------------------------------------------------------------------*/
 
-#siteName {padding:20px 0 0 10px; line-height:100%;}
+/* =Links
+----------------------------------------------------------------------------*/
 
-a {font-weight:bold; text-decoration:none;}
-a:visited {}
-a:hover {text-decoration:underline;}
+/* =Image Replacement
+----------------------------------------------------------------------------*/
+.mir {
+	letter-spacing : -1000em;
+}
+/* Just for Opera, but hide from MacIE */
+/*\*/html>body .mir {
+	letter-spacing : normal;
+	text-indent : -999em;
+	overflow : hidden;
+}
+/* End of hack */
 
-#pageContent p, .snapshot p {text-align:justify;}
-
-#secondaryContent h3 {background:#444; color:#e6e6e6; padding:0 5px; font-variant:small-caps; margin:0 0 5px 0;}
-
-#previewBlock h3 {background:#444444; color:#E6E6E6; text-transform:caps;}
-
-.sidebarBlock h4 {padding:0; outline-bottom:1px #ccc dotted;}
-
-.listItem p {margin:0;}
-
-.required {color:#000; font-weight:bold;}
-.error p {padding:0; margin:0; height:20px; font-weight:bold; color:#fff;}
-
-.smaller {font-size:66%;}
-.larger {font-size:116%;}
-
-#legalBlock h4 {margin:0;}
-.metaBlock {font-size:12px; line-height:20px;}
-
-#sidebar h4 {border-bottom:1px dotted #ccc; margin:0 0 19px;}
+p.mir {
+	line-height:0;
